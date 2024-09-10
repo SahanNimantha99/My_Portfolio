@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -15,21 +14,43 @@ import Blog from "./components/Blog";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />{" "}
-          <Route path="/about" element={<About />} />{" "}
-          <Route path="/work" element={<Work />} />{" "}
-          <Route path="/education" element={<Education />} />{" "}
-          <Route path="/projects" element={<Projects />} />{" "}
-          <Route path="/hackathon" element={<Hackathon />} />{" "}
-          <Route path="/contact" element={<Contact />} />{" "}
-          <Route path="/blog" element={<Blog />} />{" "}
-        </Routes>{" "}
+    <div className="App">
+      <Navbar />
+      <div className="container">
+        <section id="hero">
+          {" "}
+          <Hero />{" "}
+        </section>{" "}
+        <section id="about">
+          {" "}
+          <About />{" "}
+        </section>{" "}
+        <section id="work">
+          {" "}
+          <Work />{" "}
+        </section>{" "}
+        <section id="education">
+          {" "}
+          <Education />{" "}
+        </section>{" "}
+        <section id="projects">
+          {" "}
+          <Projects />{" "}
+        </section>{" "}
+        <section id="hackathon">
+          {" "}
+          <Hackathon />{" "}
+        </section>{" "}
+        <section id="contact">
+          {" "}
+          <Contact />{" "}
+        </section>{" "}
+        <section id="blog">
+          {" "}
+          <Blog />{" "}
+        </section>{" "}
       </div>{" "}
-    </Router>
+    </div>
   );
 }
 

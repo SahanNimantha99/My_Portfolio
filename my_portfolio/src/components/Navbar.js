@@ -1,43 +1,69 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          {" "}
+        <button
+          className="navbar-brand btn btn-link"
+          onClick={() => scrollToSection("hero")}
+        >
           My Portfolio{" "}
-        </Link>{" "}
+        </button>{" "}
         <div className="navbar-nav">
-          <Link className="nav-item nav-link" to="/about">
+          <button
+            className="nav-item nav-link btn btn-link"
+            onClick={() => scrollToSection("about")}
+          >
             {" "}
             About{" "}
-          </Link>{" "}
-          <Link className="nav-item nav-link" to="/work">
+          </button>{" "}
+          <button
+            className="nav-item nav-link btn btn-link"
+            onClick={() => scrollToSection("work")}
+          >
             {" "}
             Work{" "}
-          </Link>{" "}
-          <Link className="nav-item nav-link" to="/education">
+          </button>{" "}
+          <button
+            className="nav-item nav-link btn btn-link"
+            onClick={() => scrollToSection("education")}
+          >
             {" "}
             Education{" "}
-          </Link>{" "}
-          <Link className="nav-item nav-link" to="/projects">
+          </button>{" "}
+          <button
+            className="nav-item nav-link btn btn-link"
+            onClick={() => scrollToSection("projects")}
+          >
             {" "}
             Projects{" "}
-          </Link>{" "}
-          <Link className="nav-item nav-link" to="/hackathon">
+          </button>{" "}
+          <button
+            className="nav-item nav-link btn btn-link"
+            onClick={() => scrollToSection("hackathon")}
+          >
             {" "}
             Hackathon{" "}
-          </Link>{" "}
-          <Link className="nav-item nav-link" to="/contact">
+          </button>{" "}
+          <button
+            className="nav-item nav-link btn btn-link"
+            onClick={() => scrollToSection("contact")}
+          >
             {" "}
             Contact{" "}
-          </Link>{" "}
-          <Link className="nav-item nav-link" to="/blog">
+          </button>{" "}
+          <button
+            className="nav-item nav-link btn btn-link"
+            onClick={() => scrollToSection("blog")}
+          >
             {" "}
             Blog{" "}
-          </Link>{" "}
+          </button>{" "}
         </div>{" "}
       </div>{" "}
     </nav>
