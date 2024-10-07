@@ -14,7 +14,7 @@
 }
 
 .App-header {
-    background-color: #282c34;
+    background-color: #343a40;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
 }
 
 .navbar {
@@ -63,22 +63,29 @@ section:nth-child(even) {
 
 .navbar-nav .btn-link {
     padding: 0.5rem 1rem;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     background-color: transparent;
     border: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar-nav .btn-link:hover,
 .navbar-nav .btn-link:focus {
-    color: rgba(0, 0, 0, .7);
+    color: #61dafb;
+    background-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
 }
 
 .navbar-brand.btn-link {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-decoration: none;
     white-space: nowrap;
     border: none;
     padding: 0;
+    color: #61dafb;
+}
+
+.navbar-brand.btn-link:hover {
+    color: #fff;
 }

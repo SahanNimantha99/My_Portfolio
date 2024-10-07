@@ -5,9 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* Light background color for the body */
+  color: #212529; /* Dark text color for readability */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  background-color: #e9ecef; /* Light gray background for code elements */
+  padding: 2px 4px; /* Padding for code readability */
+  border-radius: 4px; /* Rounded corners for code elements */
 }
